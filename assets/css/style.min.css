@@ -466,7 +466,7 @@ textarea {
   background-color: #F0F8F6;
 }
 
-.dropdown:hover .menuDropdown {
+.menuNav__item :hover ~ ul {
   display: block;
 }
 
@@ -758,6 +758,7 @@ textarea {
   font-size: 7.2rem;
   line-height: 11.7rem;
   color: transparent;
+  -webkit-color: #000;
   -webkit-background-clip: text;
   background-clip: text;
   background-image: linear-gradient(141.39deg, #74E6CF 13.88%, #C0E594 106.32%);

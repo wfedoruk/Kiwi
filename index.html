@@ -23,8 +23,8 @@
             <nav class="menuNav">
                 <ul class="menuNav__list">
                     <li class="menuNav__item"> <a href="">Home</a></li>
-                    <li class="menuNav__item  dropdown"> 
-                        <a href="">Boxes</a>
+                    <li class="menuNav__item" id="dropdown"> 
+                        <a class="dropdown" href="">Boxes</a>
                         <ul class="menuDropdown">
                             <li class="menuDropdown__item"><a href="#">What's inside</a></li>
                             <li class="menuDropdown__item"><a href="#">Kiwi Eco Box</a></li>
@@ -32,13 +32,13 @@
                             <li class="menuDropdown__item"><a href="#">Kiwi Eco Box</a></li> -->
                         </ul>
                     </li>
-                    <li class="menuNav__item">
-                        <a href="">
-                            <div class="logo">
-                                <img class="logo__img" src="assets/images/logo/logo.png" alt="">
-                            </div>
-                        </a>
-                    </li>
+                    
+                    <a class="menuNav_logo" href="">
+                        <div class="logo">
+                            <img class="logo__img" src="assets/images/logo/logo.png" alt="">
+                        </div>
+                    </a>
+                   
                     <li class="menuNav__item"> <a href="">About</a></li>
                     <li class="menuNav__item"> <a href="">Account</a></li>
                 </ul>
@@ -50,9 +50,9 @@
     <main>
         <div class="startBlock">
             <div class="startBlock__heading">
-                <p class="startBlock__item">Everything You Need</p>
-                <p class="startBlock__item startBlock__item_directionsToTheRight"><span>to</span> Start Living</p>
-                <p class="startBlock__item startBlock__item_directionsToTheRight startBlock__item_directionsMoreToTheRight">Zero-Waste</p>
+                <h1 class="startBlock__item">Everything You Need</h1>
+                <h2 class="startBlock__item startBlock__item_directionsToTheRight"><span>to</span> Start Living</h2>
+                <h2 class="startBlock__item startBlock__item_directionsToTheRight startBlock__item_directionsMoreToTheRight">Zero-Waste</h2>
             </div>
             <div>
                 <img class="startBlock__image" src="assets/images/start/box.png" alt="">
@@ -91,6 +91,7 @@
                             <p class="HowItWorksBlock__text">Small steps can lead to bigger changes, and now you are the change. Let's build community of people who care</p>
                         </div>
                     </div>
+                    
                 </div>
                 <button class="button">Get the Box</button>
             </div>
@@ -120,7 +121,7 @@
                         <img class="missionBlock__img" src="assets/images/mission/feet.svg" alt="">
                     </div>
                     <div >
-                        <p class="missionBlock__slogan">We are here to help you live greener and more sustainably</p>
+                        <h2 class="missionBlock__slogan">We are here to help you live greener and more sustainably</h2>
                         <p class="missionBlock__text">Small steps matter</p>
                     </div>
                 </div>
@@ -188,24 +189,32 @@
                             <div>
                                 <img class="blogBlock__img" src="assets/images/blog/one.png" alt="">
                             </div>
-                            <h4 class="blogBlock__itemTitle blogBlock__itemTitle_lineHeightCenter">Why KIWI Eco Box?</h4>
+                        </a>
+                        <div class="blogBlock_wrapper">
+                            <h4 class="blogBlock__itemTitle blogBlock__itemTitle_lineHeightCenter"> <a href="">Why KIWI Eco Box?</a></h4>
                             <div class="blogBlock__text">
                                 <span class="spanWave spanWave_longer"></span>
                                 <p>Get started by signing up for monthly subscription. We bring you an easy way to start your zero-waste journey</p>
                             </div>
-                            <div class="button button_small">Read more</div> 
-                        </a>
+                            <a href="">
+                                <div class="button button_small">Read more</div> 
+                            </a>
+                        </div>
                     </div>
                     <div class="blogBlock__item">
                         <a href="">
                             <div>
                                 <img class="blogBlock__img" src="assets/images/blog/two.png" alt="">
                             </div>
-                            <h4 class="blogBlock__itemTitle">What Is Inside The April Kiwi Eco Box? Portable Lunch Box</h4>
+                        </a>
+                        <div class="blogBlock_wrapper">
+                            <h4 class="blogBlock__itemTitle"> <a href="">What Is Inside The April Kiwi Eco Box? Portable Lunch Box</a></h4>
                             <div class="blogBlock__text">
                                 <span class="spanWave spanWave_longer"></span>
                                 <p>Every month receive your box with essential products, but plastic free and safe for the environment</p>
                             </div>
+                            <a href="">
+                        <</div>
                             <div class="button button_small">Read more</div> 
                         </a>
                     </div>
@@ -214,11 +223,15 @@
                             <div>
                                 <img class="blogBlock__img" src="assets/images/blog/three.png" alt="">
                             </div>
-                            <h4 class="blogBlock__itemTitle blogBlock__itemTitle_lineHeightCenter">Make a Difference</h4>
+                        </a>
+                        <div class="blogBlock_wrapper">
+                            <h4 class="blogBlock__itemTitle blogBlock__itemTitle_lineHeightCenter"> <a href="">Make a Difference</a></h4>
                             <div class="blogBlock__text">
                                 <span class="spanWave spanWave_longer"></span>
                                 <p>Small steps can lead to bigger changes, and now you are the change. Let's build community of people who care</p>
                             </div>
+                        </div>
+                        <a href="">
                             <div class="button button_small">Read more</div> 
                         </a>
                     </div>
@@ -235,15 +248,13 @@
                     <form class="form form_email"  action="#" method="GET">\
                         <div class="form_error"><span id="error"></span></div>
                         <div class="form mailBox__form">
-                            <label for="email"></label>
-                            <input type="text" id="email" placeholder="Your email adress">
-                            <button class="button button_moveToRight" type="submit">Sign up</button>
-                            <!-- <input  class="button button_moveToRight" type="submit" value="Sign up"> -->
-                            
+                            <!-- <label for="email"></label> -->
+                            <input type="text" name="email" placeholder="Your email adress">
+                            <!-- <button class="button button_moveToRight" type="submit">Sign up</button> -->
+                            <input  class="button button_moveToRight" type="submit" value="Sign up">
                         </div>
-    
                     </form>
-                    <p class="mailBox__subtitle">By clicking "sign up" you agree to receive emails from CAUSEBOX and accept our web terms of use and privacy and cookie policy</p>
+                    <p class="mailBox__subtitle">By clicking "sign up" you agree to receive emails from CAUSEBOX and accept our web <a href="">terms of use</a> and <a href="">privacy and cookie policy</a></p>
                 </div>
             </div>
         </div>
@@ -270,54 +281,62 @@
             <div class="container">
                 <p class="review__suptitle">What do our</p>
                 <h2 class="blockTitle reviewBlock_title">clients say</h2>
-                <div class="reviewBlock__inner">
-                    <div class="reviewBlock__imageInner">
-                        <img class="reviewBlock_img" src="assets/images/review/reviewImageCenter.png" alt="">
-                    </div>
-                    <div class="reviewBlock__slider">
-                        <div class="reviewBlock__textInner">
-                            <div class="reviewBlock__heading">
-                                <p>Jessica T.</p>
-                                <div>
-                                    <div class="reviewBlock__stars">
-                                        <span class="spanStar"></span>
-                                        <span class="spanStar"></span>
-                                        <span class="spanStar"></span>
-                                        <span class="spanStar"></span>
-                                        <span class="spanStar"></span>
-                                        <span class="review__rating">5/5</span>
-                                    </div>  
-                                    
+                <div class="reviewBlock__slider">
+                    <div class="reviewBlock__inner">
+                        <div class="reviewBlock__wrapper">         
+                            <div class="reviewBlock__imageInner">
+                                <img class="reviewBlock_img" src="assets/images/review/reviewImageCenter.png" alt="">
+                            </div>
+                            <div class="reviewBlock__textInner">
+                                <div class="reviewBlock__heading">
+                                    <p>Jess P.</p>
+                                    <div>
+                                        <div class="reviewBlock__stars">
+                                            <span class="spanStar"></span>
+                                            <span class="spanStar"></span>
+                                            <span class="spanStar"></span>
+                                            <span class="spanStar"></span>
+                                            <span class="spanStar"></span>
+                                            <span class="review__rating">5/5</span>
+                                        </div>  
+                                        
+                                    </div>
+                                </div>
+                                <span class="spanWave spanWave_longer"></span>
+                                <div class="reviewBlock__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                                    <p>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                                 </div>
                             </div>
-                            
-                            <span class="spanWave spanWave_longer"></span>
-                            <div class="reviewBlock__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                                <p>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div> 
+                    </div> 
+                    <div class="reviewBlock__inner">
+                        <div class="reviewBlock__wrapper">         
+                            <div class="reviewBlock__imageInner">
+                                <img class="reviewBlock_img" src="assets/images/review/reviewImageCenter.png" alt="">
                             </div>
-                        </div>
-                        <div class="reviewBlock__textInner">
-                            <div class="reviewBlock__heading">
-                                <p>Jess T.</p>
-                                <div>
-                                    <div class="reviewBlock__stars">
-                                        <span class="spanStar"></span>
-                                        <span class="spanStar"></span>
-                                        <span class="spanStar"></span>
-                                        <span class="spanStar"></span>
-                                        <span class="spanStar"></span>
-                                        <span class="review__rating">5/5</span>
-                                    </div>  
-                                    
+                            <div class="reviewBlock__textInner">
+                                <div class="reviewBlock__heading">
+                                    <p>Jessica T.</p>
+                                    <div>
+                                        <div class="reviewBlock__stars">
+                                            <span class="spanStar"></span>
+                                            <span class="spanStar"></span>
+                                            <span class="spanStar"></span>
+                                            <span class="spanStar"></span>
+                                            <span class="spanStar"></span>
+                                            <span class="review__rating">5/5</span>
+                                        </div>  
+                                        
+                                    </div>
+                                </div>
+                                <span class="spanWave spanWave_longer"></span>
+                                <div class="reviewBlock__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                                    <p>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                                 </div>
                             </div>
-                            <span class="spanWave spanWave_longer"></span>
-                            <div class="reviewBlock__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                                <p>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                            </div>
-                        </div>
+                        </div> 
                     </div>
                 </div>
                     
@@ -372,15 +391,16 @@
                 
                 
                 <div class="footer_dev">
-                    <a href="">Development by SheepFish</a>
+                    <a href="">Development by SheepFish<span class="logo_SheepFish"></span></a>
                 </div>
-                <span class="logo_SheepFish"></span>
+                
             </div>
         </div>
     </footer>
 
+   
 
-    <script src="assets/js/app.js"></script>
+    <!-- <script src="assets/js/app.js"></script> -->
     <!-- <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script> -->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

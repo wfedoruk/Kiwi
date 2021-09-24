@@ -772,6 +772,7 @@ textarea {
   font-weight: normal;
   font-size: 7.2rem;
   line-height: 11.7rem;
+  margin-right: 10rem;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -1082,7 +1083,7 @@ textarea {
 }
 
 .reviewBlock__textInner .spanWave {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .reviewBlock__text {
@@ -1112,12 +1113,12 @@ textarea {
 }
 
 .reviewBlock__text p {
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   width: 56.5rem;
 }
 
 .reviewBlock__sliderNav {
-  margin-left: 60.5rem;
+  margin-left: 60rem;
 }
 
 .reviewBlock__sliderNav .arrowLeft {

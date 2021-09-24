@@ -365,6 +365,7 @@ textarea {
     max-width: 122rem;
     width: 100%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .menuNav__list {
@@ -376,9 +377,9 @@ textarea {
 
 .menuNav__item {
     display: block;
-    padding: 0 5rem;
-    height: 14rem;
-    line-height: 14rem;
+    margin: 4.5rem 5rem;
+    height: 5rem;
+    line-height: 5rem;
     font-style: normal;
     font-weight: bold;
     font-size: 2.4rem;
@@ -398,6 +399,12 @@ textarea {
     border-bottom: 0.4rem solid #01A3A4;
 }
 
+.menuNav_logo {
+    height: 14rem;
+    line-height: 14rem;
+    margin: 0 5rem;
+}
+
 .logo__img {
     width: 19rem;
     height: 10rem;
@@ -408,13 +415,14 @@ textarea {
     line-height: 19rem;
     font-size: 1.8rem;
     font-weight: normal;
-    padding-right: 3rem;
-    padding-left: 0;
+    margin-right: 3rem;
+    margin-left: 0;
+    margin: 0 3rem 0 0;
 }
 
 .menuNav__item_social {
-    margin-top: 0.7rem;
-    padding: 0 1rem;
+    margin-top: 0.7rem !important;
+    margin: 0 1rem;
 }
 
 .menuNav__item_social a:hover {
@@ -430,8 +438,8 @@ textarea {
 .menuDropdown {
     display: none;
     position: absolute;
-    bottom: -11rem;
-    left: 3rem;
+    bottom: -15rem;
+    left: -2rem;
     background-color: #fff;
     box-shadow: 1rem 1rem 3rem rgba(1, 163, 164, 0.15);
     z-index: 10;
@@ -466,7 +474,7 @@ textarea {
     background-color: #F0F8F6;
 }
 
-.dropdown:hover .menuDropdown {
+#dropdown:hover .menuDropdown {
     display: block;
 }
 
@@ -540,6 +548,8 @@ textarea {
 }
 
 .startBlock__item_directionsToTheRight {
+    margin-right: 50rem;
+    text-align: right;
     font-size: 7.2rem;
     line-height: 8.7rem;
     color: #fff;
@@ -547,7 +557,6 @@ textarea {
     font-weight: normal;
     position: relative;
     text-transform: capitalize;
-    left: 30rem;
 }
 
 .startBlock__item_directionsToTheRight span {
@@ -555,7 +564,7 @@ textarea {
 }
 
 .startBlock__item_directionsMoreToTheRight {
-    left: 45rem;
+    margin-right: 41rem;
 }
 
 .startBlock__image {
@@ -760,15 +769,13 @@ textarea {
 }
 
 .missionBlock__text {
-    position: relative;
-    left: 63rem;
+    text-align: right;
     font-family: Galada;
     font-style: normal;
     font-weight: normal;
     font-size: 7.2rem;
     line-height: 11.7rem;
     color: transparent;
-    -webkit-color: #000;
     -webkit-background-clip: text;
     background-clip: text;
     background-image: linear-gradient(141.39deg, #74E6CF 13.88%, #C0E594 106.32%);

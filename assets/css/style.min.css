@@ -369,6 +369,7 @@ textarea {
   max-width: 122rem;
   width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .menuNav__list {
@@ -378,9 +379,9 @@ textarea {
 
 .menuNav__item {
   display: block;
-  padding: 0 5rem;
-  height: 14rem;
-  line-height: 14rem;
+  margin: 4.5rem 5rem;
+  height: 5rem;
+  line-height: 5rem;
   font-style: normal;
   font-weight: bold;
   font-size: 2.4rem;
@@ -400,6 +401,12 @@ textarea {
   border-bottom: 0.4rem solid #01A3A4;
 }
 
+.menuNav_logo {
+  height: 14rem;
+  line-height: 14rem;
+  margin: 0 5rem;
+}
+
 .logo__img {
   width: 19rem;
   height: 10rem;
@@ -410,13 +417,14 @@ textarea {
   line-height: 19rem;
   font-size: 1.8rem;
   font-weight: normal;
-  padding-right: 3rem;
-  padding-left: 0;
+  margin-right: 3rem;
+  margin-left: 0;
+  margin: 0 3rem 0 0;
 }
 
 .menuNav__item_social {
-  margin-top: 0.7rem;
-  padding: 0 1rem;
+  margin-top: 0.7rem !important;
+  margin: 0 1rem;
 }
 
 .menuNav__item_social a:hover {
@@ -432,8 +440,8 @@ textarea {
 .menuDropdown {
   display: none;
   position: absolute;
-  bottom: -11rem;
-  left: 3rem;
+  bottom: -15rem;
+  left: -2rem;
   background-color: #fff;
   box-shadow: 1rem 1rem 3rem rgba(1, 163, 164, 0.15);
   z-index: 10;
@@ -466,7 +474,7 @@ textarea {
   background-color: #F0F8F6;
 }
 
-.menuNav__item :hover ~ ul {
+#dropdown:hover .menuDropdown {
   display: block;
 }
 
@@ -540,6 +548,8 @@ textarea {
 }
 
 .startBlock__item_directionsToTheRight {
+  margin-right: 50rem;
+  text-align: right;
   font-size: 7.2rem;
   line-height: 8.7rem;
   color: #fff;
@@ -547,7 +557,6 @@ textarea {
   font-weight: normal;
   position: relative;
   text-transform: capitalize;
-  left: 30rem;
 }
 
 .startBlock__item_directionsToTheRight span {
@@ -555,7 +564,7 @@ textarea {
 }
 
 .startBlock__item_directionsMoreToTheRight {
-  left: 45rem;
+  margin-right: 41rem;
 }
 
 .startBlock__image {
@@ -594,9 +603,16 @@ textarea {
   height: 3rem;
   font-size: 1.2rem;
   line-height: 1.4rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
   display: flex;
   align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   justify-content: space-around;
+  color: #fff;
 }
 
 .button:hover {
@@ -618,13 +634,13 @@ textarea {
   height: 35.6rem;
   display: flex;
   justify-content: center;
+  justify-content: space-between;
   margin-bottom: 5rem;
 }
 
 .HowItWorksBlock__item {
   width: 28.2rem;
   height: 7.2rem;
-  margin-right: 18.7rem;
   text-align: center;
 }
 
@@ -694,8 +710,8 @@ textarea {
 }
 
 .mohthBlock__text {
-  width: 52rem;
-  height: 16.8rem;
+  max-width: 52rem;
+  width: 100%;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -750,15 +766,13 @@ textarea {
 }
 
 .missionBlock__text {
-  position: relative;
-  left: 63rem;
+  text-align: right;
   font-family: Galada;
   font-style: normal;
   font-weight: normal;
   font-size: 7.2rem;
   line-height: 11.7rem;
   color: transparent;
-  -webkit-color: #000;
   -webkit-background-clip: text;
   background-clip: text;
   background-image: linear-gradient(141.39deg, #74E6CF 13.88%, #C0E594 106.32%);
@@ -804,7 +818,7 @@ textarea {
 }
 
 .blogBlock {
-  padding: 10rem 0;
+  padding: 10rem;
   text-align: center;
   background: url(../images/blog/line_bg.png) no-repeat;
   background-position: center;
@@ -816,31 +830,32 @@ textarea {
 
 .blogBlock__inner {
   display: flex;
+  justify-content: space-between;
 }
 
 .blogBlock__img {
-  width: 39rem;
-  height: 22rem;
-  margin-bottom: 3rem;
+  width: 100%;
+  height: 100%;
 }
 
 .blogBlock__item {
+  position: relative;
   width: 38.7rem;
   height: 53rem;
-  margin-right: 3rem;
   border: 1px solid #F0F8F6;
   box-sizing: border-box;
   background-color: #fff;
 }
 
-.blogBlock__item:last-child {
-  margin: 0;
+.blogBlock_wrapper {
+  padding: 4rem 4rem 0;
 }
 
 .blogBlock__itemTitle {
   text-align: left;
-  margin-left: 4rem;
-  height: 4.8rem;
+  min-height: 4.8rem;
+  display: flex;
+  align-items: center;
   font-family: Bebas Neue;
   font-style: normal;
   font-size: 2.4rem;
@@ -849,13 +864,12 @@ textarea {
   color: #000;
 }
 
-.blogBlock__itemTitle_lineHeightCenter {
-  line-height: 4.8rem;
+.blogBlock__itemTitle a {
+  text-decoration: none;
 }
 
 .blogBlock__text {
-  width: 30.7rem;
-  padding: 3rem 0 3.7rem;
+  padding: 3rem 0 0;
   margin: 0 auto;
   text-align: left;
   font-family: Roboto;
@@ -872,12 +886,9 @@ textarea {
 }
 
 .blogBlock__item .button {
-  float: right;
-  margin-right: 4rem;
-}
-
-.blogBlock__item:hover {
-  box-shadow: 0.5rem 0px 2rem rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 4rem;
+  right: 4rem;
 }
 
 .mailBox {
@@ -950,7 +961,6 @@ textarea {
   font-size: 1.4rem;
   line-height: 150%;
   color: #C4C4C4;
-  background: #fff;
   /* Chrome, Firefox, Opera, Safari 10.1+ */
 }
 
@@ -966,6 +976,10 @@ textarea {
   font-weight: normal;
   font-size: 1.2rem;
   line-height: 150%;
+  color: #C4C4C4;
+}
+
+.mailBox__subtitle a {
   color: #C4C4C4;
 }
 
@@ -1015,14 +1029,12 @@ textarea {
   margin-bottom: 5rem;
 }
 
-.reviewBlock__inner {
+.reviewBlock__wrapper {
   display: flex;
 }
 
 .reviewBlock__imageInner {
   margin-right: 15rem;
-  width: 50.8rem;
-  height: 50.8rem;
 }
 
 .reviewBlock_img {
@@ -1033,7 +1045,6 @@ textarea {
 
 .reviewBlock__slider {
   margin-top: 5rem;
-  height: 45rem;
   overflow: hidden;
 }
 
@@ -1106,7 +1117,7 @@ textarea {
 }
 
 .reviewBlock__sliderNav {
-  margin-left: 62rem;
+  margin-left: 60.5rem;
 }
 
 .reviewBlock__sliderNav .arrowLeft {
@@ -1143,7 +1154,7 @@ textarea {
 
 .footer__policy {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   height: 5rem;
   line-height: 5rem;
   font-family: Roboto;
@@ -1157,13 +1168,13 @@ textarea {
   text-decoration: none;
 }
 
-.footer__year {
-  margin-right: 91.5rem;
+.footer_dev {
+  display: flex;
 }
 
 .logo_SheepFish {
-  display: block;
-  margin-top: 1.5rem;
+  position: relative;
+  top: 0.5rem;
   margin-left: 1rem;
   width: 3.8rem;
   height: 2.35rem;
@@ -1304,6 +1315,7 @@ a:hover {
 *,
 *:before,
 *:after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 

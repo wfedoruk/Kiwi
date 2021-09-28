@@ -384,6 +384,10 @@ textarea {
     }
 }
 
+.container_pre {
+    max-width: 135rem;
+}
+
 .container_big {
     max-width: 190rem;
     margin: 0 auto;
@@ -882,6 +886,7 @@ textarea {
 }
 
 .startBlock__image_ellipse13 {
+    width: 6.6rem;
     position: absolute;
     top: -11rem;
     left: 25rem;
@@ -894,6 +899,7 @@ textarea {
 }
 
 .startBlock__image_ellipse16 {
+    width: 5.3rem;
     position: absolute;
     top: 21rem;
     left: 5rem;
@@ -906,6 +912,7 @@ textarea {
 }
 
 .startBlock__image_ellipse17 {
+    width: 4.9rem;
     position: absolute;
     top: -1rem;
     left: 6rem;
@@ -918,6 +925,7 @@ textarea {
 }
 
 .startBlock__image_ellipse14 {
+    width: 8.2rem;
     position: absolute;
     top: 18rem;
     left: -1rem;
@@ -930,6 +938,7 @@ textarea {
 }
 
 .startBlock__image_ellipse15 {
+    width: 3.4rem;
     position: absolute;
     top: -3rem;
     left: 23rem;
@@ -942,6 +951,7 @@ textarea {
 }
 
 .startBlock__image_ellipse18 {
+    width: 5.5rem;
     position: absolute;
     top: -4rem;
     left: -3rem;
@@ -1008,10 +1018,9 @@ textarea {
 @media (max-width: 767px) {
     .startBlock__image_ell18 {
         display: block;
-        width: 7.5rem;
         position: absolute;
-        top: 0;
-        left: 13rem;
+        top: 1rem;
+        left: 14rem;
         z-index: -1;
     }
 }
@@ -1048,6 +1057,12 @@ textarea {
     color: #fff;
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
+}
+
+@media (max-width: 767px) {
+    .startBlock__toScroll {
+        display: none;
+    }
 }
 
 .startBlock__toScroll span {
@@ -1217,12 +1232,24 @@ textarea {
     z-index: -1;
 }
 
+@media (max-width: 767px) {
+    .HowItWorksBlock__image_ellipse13 {
+        display: none;
+    }
+}
+
 .HowItWorksBlock__image_ellipse20 {
     width: 6.3rem;
     position: absolute;
     top: 0rem;
     left: 3rem;
     z-index: -1;
+}
+
+@media (max-width: 767px) {
+    .HowItWorksBlock__image_ellipse20 {
+        display: none;
+    }
 }
 
 .HowItWorksBlock__header {
@@ -1365,6 +1392,21 @@ textarea {
         width: 4.8rem;
         bottom: 1rem;
         right: 1rem;
+        display: none;
+    }
+}
+
+.mohthBlock__img_items {
+    width: 45rem;
+    height: 30rem;
+    position: absolute;
+    -webkit-transform: translate(-50%, 40%);
+    transform: translate(-50%, 40%);
+}
+
+@media (max-width: 767px) {
+    .mohthBlock__img_items {
+        display: none;
     }
 }
 
@@ -1449,6 +1491,8 @@ textarea {
 
 .missionBlock {
     position: relative;
+    z-index: 0;
+    overflow: hidden;
     padding: 10rem 0 5rem;
     background: url(../images/mission/feet.png) 180px 45% no-repeat;
     background-size: 12rem 10rem;
@@ -1458,6 +1502,18 @@ textarea {
     .missionBlock {
         padding: 5.4rem 0 3rem;
         background: none;
+    }
+}
+
+.missionBlock__img_line {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+@media (max-width: 767px) {
+    .missionBlock__img_line {
+        display: none;
     }
 }
 
@@ -1495,7 +1551,7 @@ textarea {
 
 @media (max-width: 767px) {
     .missionBlock__inner {
-        margin-left: 0;
+        margin: 0 auto;
         display: table;
     }
 }
@@ -1565,7 +1621,7 @@ textarea {
 }
 
 .postBlock {
-    padding: 10rem 0;
+    padding: 10rem 3.5rem;
     background-color: #F0F8F6;
     text-align: center;
 }
@@ -1609,6 +1665,9 @@ textarea {
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
+    padding: 0 6.5rem;
+    position: relative;
+    z-index: 0;
 }
 
 @media (max-width: 767px) {
@@ -1633,8 +1692,8 @@ textarea {
 
 @media (max-width: 767px) {
     .postBlock__img {
-        width: 20rem;
-        height: 20rem;
+        width: 22rem;
+        height: 22rem;
     }
 }
 
@@ -1642,6 +1701,57 @@ textarea {
     .postBlock__img {
         width: 14.8rem;
         height: 14.8rem;
+    }
+}
+
+.postBlock_pre {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: 15rem;
+    left: -20rem;
+    z-index: 1;
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12.5rem;
+    line-height: 12.5rem;
+  /* identical to box height */
+    color: #fff;
+    opacity: 0.5;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+@media (max-width: 767px) {
+    .postBlock_pre {
+        display: none;
+    }
+}
+
+.postBlock__img_ellipse22 {
+    width: 6.6rem;
+}
+
+@media (max-width: 767px) {
+    .postBlock__img_ellipse22 {
+        display: none;
+    }
+}
+
+.postBlock__img_ellipse21 {
+    width: 4.9rem;
+    position: absolute;
+    top: -2rem;
+    right: 4rem;
+    z-index: -1;
+}
+
+@media (max-width: 767px) {
+    .postBlock__img_ellipse21 {
+        display: none;
     }
 }
 
@@ -1845,6 +1955,7 @@ textarea {
     padding: 10rem 0;
     background-color: #F0F8F6;
     position: relative;
+    z-index: 0;
 }
 
 @media (max-width: 767px) {
@@ -1863,6 +1974,16 @@ textarea {
 @media (max-width: 767px) {
     .mailBox__title {
         display: block;
+    }
+}
+
+.mailBox__inner {
+    margin-left: 6.5rem;
+}
+
+@media (max-width: 767px) {
+    .mailBox__inner {
+        margin-left: 0;
     }
 }
 
@@ -1925,14 +2046,12 @@ textarea {
 }
 
 .mailBox__img {
-    width: 74.3rem;
-    height: 54.65rem;
-    float: right;
-    margin-right: 25rem;
+    width: 99rem;
+    height: 72.15rem;
+    margin-right: 0;
     position: absolute;
-    top: 25rem;
+    top: 13rem;
     right: 0;
-    z-index: 0;
 }
 
 @media (max-width: 767px) {
@@ -1944,6 +2063,10 @@ textarea {
         margin: 0;
         float: unset;
     }
+}
+
+.form_email {
+    position: relative;
 }
 
 .mailBox__form {
@@ -1997,6 +2120,20 @@ textarea {
         line-height: 6rem;
         float: unset;
         margin: 2rem 0 1rem;
+    }
+}
+
+.mailBox__img_leaf {
+    width: 16.2rem;
+    position: absolute;
+    top: -4rem;
+    left: -9rem;
+    z-index: -1;
+}
+
+@media (max-width: 767px) {
+    .mailBox__img_leaf {
+        display: none;
     }
 }
 
@@ -2068,12 +2205,81 @@ textarea {
 }
 
 .reviewBlock {
+    position: relative;
+    z-index: 0;
     padding: 10rem 0;
+    overflow: hidden;
 }
 
 @media (max-width: 767px) {
     .reviewBlock {
         padding: 5rem 0 3rem;
+    }
+}
+
+.reviewBlock_quotes {
+    width: 29.8rem;
+    height: 24.4rem;
+    position: absolute;
+    top: 10rem;
+}
+
+@media (max-width: 767px) {
+    .reviewBlock_quotes {
+        display: none;
+    }
+}
+
+.reviewBlock_line {
+    height: 18rem;
+    position: absolute;
+    top: 6rem;
+    right: 1rem;
+}
+
+@media (max-width: 767px) {
+    .reviewBlock_line {
+        display: none;
+    }
+}
+
+.reviewBlock_ell25 {
+    width: 8.2rem;
+    position: absolute;
+    top: 6rem;
+    right: 20rem;
+}
+
+@media (max-width: 767px) {
+    .reviewBlock_ell25 {
+        display: none;
+    }
+}
+
+.reviewBlock_ell14 {
+    width: 8.2rem;
+    position: absolute;
+    bottom: -4rem;
+    left: 10rem;
+    z-index: -1;
+}
+
+@media (max-width: 767px) {
+    .reviewBlock_ell14 {
+        display: none;
+    }
+}
+
+.reviewBlock_ell15 {
+    width: 3.4rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 20rem;
+}
+
+@media (max-width: 767px) {
+    .reviewBlock_ell15 {
+        display: none;
     }
 }
 
@@ -2096,28 +2302,31 @@ textarea {
 }
 
 .reviewBlock_title {
+    margin-left: 32rem;
     margin-bottom: 5rem;
 }
 
 @media (max-width: 767px) {
     .reviewBlock_title {
-        margin-bottom: 2.5rem;
+        margin: 0 auto 2.5rem;
     }
 }
 
 .reviewBlock__wrapper {
+    margin-left: 14.3rem;
     display: -ms-flexbox;
     display: flex;
 }
 
 @media (max-width: 767px) {
     .reviewBlock__wrapper {
+        margin: 0 auto;
         display: block;
     }
 }
 
 .reviewBlock__imageInner {
-    margin-right: 15rem;
+    margin-right: 10rem;
 }
 
 @media (max-width: 767px) {
@@ -2128,8 +2337,8 @@ textarea {
 
 .reviewBlock_img {
     margin-left: 2.7rem;
-    width: 42.2rem;
-    height: 50.8rem;
+    width: 66.8rem;
+    height: 50rem;
 }
 
 .reviewBlock__slider {
@@ -2525,7 +2734,6 @@ textarea {
 
 html {
     font-family: Bebas Neue;
-    font-size: 13px;
 }
 
 @media only screen and (max-width: 767px) {

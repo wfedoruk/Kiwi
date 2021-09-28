@@ -707,6 +707,7 @@ textarea {
 }
 
 .startBlock__heading {
+  position: relative;
   font-style: normal;
   font-weight: normal;
   font-size: 9.6rem;
@@ -730,11 +731,21 @@ textarea {
   color: #fff;
   font-family: "Galada", cursive;
   font-weight: normal;
-  position: relative;
   text-transform: capitalize;
+  position: absolute;
+  top: 10rem;
+  right: 0;
+}
+@media (max-width: 1025px) {
+  .startBlock__item_galada {
+    position: relative;
+    top: 0;
+  }
 }
 @media (max-width: 767px) {
   .startBlock__item_galada {
+    position: relative;
+    top: 0;
     margin: 0;
     font-size: 2.6rem;
     text-align: center;
@@ -772,6 +783,8 @@ textarea {
 .startBlock__images {
   margin: 0 auto;
   display: flex;
+  -ms-flex-align: center;
+  align-items: center;
   justify-content: space-around;
 }
 @media (max-width: 767px) {
@@ -925,13 +938,8 @@ textarea {
   }
 }
 
-.startBlock__image_box {
-  position: relative;
-  top: -12rem;
-}
 @media (max-width: 1025px) {
   .startBlock__image_box {
-    width: 0;
     display: none;
   }
 }

@@ -743,6 +743,7 @@ textarea {
 .startBlock {
   padding: 7rem 0;
   text-align: center;
+  overflow: hidden;
   background: linear-gradient(129.34deg, #FECA57 56.78%, #E3AA2D 101.94%);
   position: relative;
 }
@@ -759,6 +760,7 @@ textarea {
   font-style: normal;
   font-weight: normal;
   font-size: 9.6rem;
+  margin-bottom: 2rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #212121;
@@ -1121,6 +1123,7 @@ textarea {
     font-weight: 500;
     font-size: 1.2rem;
     line-height: 1.4rem;
+    text-align: right;
     color: #01A3A4;
   }
 }
@@ -1883,6 +1886,21 @@ textarea {
   }
 }
 
+.spanBtn {
+  display: none;
+}
+@media (max-width: 767px) {
+  .spanBtn {
+    display: block;
+    width: 2.2rem;
+    content: url(../images/blog/spanBtn.png);
+  }
+}
+
+.more {
+  margin-left: 1rem;
+}
+
 .blogBlock__item .button {
   position: absolute;
   bottom: 4rem;
@@ -2443,7 +2461,7 @@ textarea {
 }
 
 .reviewBlock__sliderNav {
-  margin-left: 60rem;
+  margin-left: 73rem;
 }
 @media (max-width: 767px) {
   .reviewBlock__sliderNav {

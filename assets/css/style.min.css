@@ -1041,10 +1041,10 @@ textarea {
 @media (max-width: 767px) {
   .startBlock__image_ell14 {
     display: block;
-    width: 6rem;
+    width: 4.2rem;
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: 2rem;
+    left: 2.5rem;
   }
 }
 
